@@ -4,7 +4,6 @@ import requests
 
 from ht1632cpy import HT1632C
 
-
 def scroll_message(msg, color, bg):
     msg_length = len(msg) * interface.fontwidth(interface.font6x8)
 
@@ -22,19 +21,6 @@ def scroll_message(msg, color, bg):
 # Example scrolls the message across the screen in different colors.
 interface = HT1632C(1, 0)
 interface.pwm(15)
-
-message = "Hello World!"
-
-#scroll_message(message, interface.GREEN, interface.BLACK)
-#scroll_message(message, interface.RED, interface.GREEN)
-#scroll_message(message, interface.BLACK, interface.ORANGE)
-
-#python_reddit_rss_url = "http://www.reddit.com/r/python/.rss"
-
-#feed = feedparser.parse(python_reddit_rss_url)
-
-#for post in feed.entries:
-#  scroll_message(post.title, 1, 0)
 
 old_price =0
 
