@@ -1,6 +1,6 @@
 # Pi_Ethereum_Price_Ticker
 
-Python script that continuously grabs the current etheruem price via coinbase API and displays it via a SURE 0832 LED matrix display
+Python script that continuously grabs the current etheruem price via coinbase API and displays it via a SURE 0832 LED matrix display.  Should work with any of the other more readily available HT1632 matrix led displays currenlty available with some minor modifications.
 
 ## Prerequisites
 
