@@ -7,7 +7,7 @@ Python script that continuously grabs the current etheruem price via coinbase AP
 Utlizes the Python HT1632 library by mchester
 https://github.com/mchestr/HT1632C-Python
 
-Follow the instructions on this github for installation and testing first.  If the samples dont work then the ticker wont work.
+Follow the instructions on his git for installation and testing first.  If the samples dont work then the ticker wont work.
 
 ## Hardware
 
