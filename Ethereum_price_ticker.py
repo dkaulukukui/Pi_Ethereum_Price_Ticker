@@ -33,11 +33,16 @@ while var == 1:
   string1 = ' Eth ' + repr(recent_price) + ' '
  
   if(recent_price > old_price):
-    final_string = chr(30) + string1
-  elif(recent_price == old_price):
-    final_string = string1
-  else:
-    final_string = chr(31) + string1
+    price_sign = chr(30)
+    #final_string = chr(30) + string1
+  elif(recent_price <  old_price):
+    price_sign = chr(31)
+    #final_string = string1
+  #else:
+    #price_sign = chr(31)
+    #final_string = chr(31) + string1
+
+  final_string = price_sign + string1
 
   scroll_message(final_string,1,0)
   
