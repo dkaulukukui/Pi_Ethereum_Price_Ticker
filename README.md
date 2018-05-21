@@ -12,6 +12,7 @@ Follow the instructions on his git for installation and testing first.  If the s
 Any changes made to the panelconfig.h (or any of the ht1632 library files for that matter) file will require you to delete the entire "build" directory and then recompile.
 
 sudo rm -r ./build (from HT1632C-Python directory)
+
 sudo python setup.py install
 
 You will need the feed parser python module:
