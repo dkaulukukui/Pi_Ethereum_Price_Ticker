@@ -9,6 +9,9 @@ https://github.com/mchestr/HT1632C-Python
 
 Follow the instructions on his git for installation and testing first.  If the samples dont work then the ticker wont work.
 
+You will need the feed parser python module:
+https://pypi.org/project/feedparser/
+
 ## Hardware
 
 The SURE panel I am using is no longer available for sale however is the one listed here:
