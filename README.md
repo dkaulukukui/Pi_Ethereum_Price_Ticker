@@ -1,6 +1,6 @@
 # Pi_Ethereum_Price_Ticker
 
-Python script that continuously grabs the current etheruem price via coinbase API and displays it via a SURE 0832 LED matrix display.  Should work with any of the other more readily available HT1632 matrix led displays currenlty available with some minor modifications.
+Python script that continuously grabs the current etheruem price via coinbase API and displays it via most HT1632c driven LED matrix displays.  
 
 ## Prerequisites
 
@@ -22,10 +22,16 @@ sudo pip install feed parser
 
 ## Hardware
 
-The SURE panel I am using is an older SURE0832 panel that still uses the newer HT1632C chipset.
+The SURE panel I am using is an older SURE0832 panel that still uses the newer HT1632C chipset.  
 
-The datasheet for the older panel is here:
-https://alastair.d-silva.org/system/files/DE-DP105_Ver1.0_EN_0.pdf
+SURE model 15151-11V110 however as of this writing I can no longer find it for sale online.
+
+I have tested it with this cheap AliExpress version and it works plug and play:
+
+https://www.aliexpress.com/item/Lattice-Breakout-LED-HT1632C-Module-8X32-Red-Dot-matrix-Screen/32681502073.html?spm=a2g0s.9042311.0.0.51504c4doAaNF3
+
+They are being sold as "Lattice Breakout LED HT1632C Modules".  For $8 you cant go wrong.
+
 
 ## Wiring
 
