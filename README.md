@@ -20,7 +20,7 @@ sudo python setup.py install
 You will need the feed parser python module:
 https://pypi.org/project/feedparser/
 
-sudo pip install feed parser
+sudo pip install feedparser
 
 ## Hardware
 
