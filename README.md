@@ -5,22 +5,95 @@ Python script that continuously grabs the current etheruem price via coinbase AP
 ## Prerequisites
 
 Utlizes the Python HT1632 library by mchester
-https://github.com/mchestr/HT1632C-Python
+https://github.com/mchestr/HT1632C-Python (out of date install instructions, see below)
 
-I have included the modified HT1632C-Python files used for my setup in this repo.  Please refer to the above repo for directions.
+I have cloned and updated the installation instructions and stored them here:
+https://github.com/dkaulukukui/HT1632C-Python
 
-Follow the instructions on his git for installation and testing first.  If the samples dont work then the ticker wont work.
+I have included the modified HT1632C-Python files used for my setup in this repo. 
 
-Any changes made to the panelconfig.h (or any of the ht1632 library files for that matter) file will require you to delete the entire "build" directory and then recompile.
+Execute the following commands to have an updated package database, and
+to install python-dev and git-core:
 
+```
+sudo apt-get update
+sudo apt-get install python-dev
+sudo apt-get install git
+
+sudo apt-get install -y python-setuptools
+```
+
+You are now ready to install the wiringPi library. You may have a look
+at http://wiringpi.com/ for further information and documentation.
+WiringPi is PRE-INSTALLED with standard Raspbian systems.
+
+To update or install on a Raspbian-Lite system:
+```
+sudo apt-get install wiringpi
+```
+
+### Enable SPI on Board
+This is done through raspi-config.  Go
+
+```
+sudo raspi-config
+
+```
+Select Option 5 Interfacing Options
+Select Option P4 SPI
+Select Yes to enable SPI
+
+After all of that you should be able to clone this git and run an example I have
+
+```
+git clone git://github.com/dkaulukukui/Pi_Ethereum_Price_Ticker.git
+
+```
+
+Navigate to the HT Directory and install
+
+```
+ cd Pi_Ethereum_Price_Ticker/HT1632C-Python
+ sudo python setup.py install
+
+```
+Start by running the wipe example
+
+```
+ cd examples
+ sudo python wipe.py
+
+```
+NOTE: Any changes made after the initial install above to the panelconfig.h (or any of the ht1632 library files for that matter) file will require you to delete the entire "build" directory and then recompile.
+
+```
 sudo rm -r ./build (from HT1632C-Python directory)
 
 sudo python setup.py install
 
-You will need the feed parser python module:
+```
+
+
+You will now need to install pip and the feed parser python module:
 https://pypi.org/project/feedparser/
 
+```
+sudo apt-get install python-pip
+
 sudo pip install feedparser
+sudo pip install requests
+
+```
+
+Once the above is complete you should be able to run the main script:
+
+```
+ sudo python setup.py install
+
+```
+
+
+
 
 ## Hardware
 
